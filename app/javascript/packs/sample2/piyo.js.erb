@@ -2,9 +2,16 @@
 
 <% helpers = ActionController::Base.helpers %>
 var railsImagePath = "<%= helpers.image_path('rails.jpg') %>";
+var assetPackPath = "<%= helpers.asset_pack_path('rails.png') %>";
+
 var img = document.createElement('img');
 img.src = railsImagePath;
 document.body.appendChild(img);
 
+var img = document.createElement('img');
+img.src = assetPackPath;
+document.body.appendChild(img);
+
 console.log('sample2/piyo')
 console.log('railsImagePath: ', railsImagePath)
+console.log('assetPackPath: ', assetPackPath)
