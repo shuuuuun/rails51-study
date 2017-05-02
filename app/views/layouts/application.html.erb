@@ -10,6 +10,9 @@
 
   <body>
     <%= yield %>
+    <div><!-- asset_pack_path sample -->
+      <img src="<%= asset_pack_path 'rails.png' %>" />
+    </div>
     <%= javascript_pack_tag 'application' %>
     <%= javascript_pack_tag 'sample' %>
   </body>

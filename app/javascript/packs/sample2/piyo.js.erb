@@ -1,0 +1,10 @@
+/* eslint no-console:0 */
+
+<% helpers = ActionController::Base.helpers %>
+var railsImagePath = "<%= helpers.image_path('rails.jpg') %>";
+var img = document.createElement('img');
+img.src = railsImagePath;
+document.body.appendChild(img);
+
+console.log('sample2/piyo')
+console.log('railsImagePath: ', railsImagePath)
