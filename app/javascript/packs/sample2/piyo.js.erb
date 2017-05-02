@@ -1,17 +1,22 @@
 /* eslint no-console:0 */
 
+import rails_png from '../images/rails.png'
+
 <% helpers = ActionController::Base.helpers %>
 var railsImagePath = "<%= helpers.image_path('rails.jpg') %>";
 var assetPackPath = "<%= helpers.asset_pack_path('rails.png') %>";
 
-var img = document.createElement('img');
-img.src = railsImagePath;
-document.body.appendChild(img);
-
-var img = document.createElement('img');
-img.src = assetPackPath;
-document.body.appendChild(img);
+createImg(railsImagePath)
+createImg(assetPackPath)
+createImg(rails_png)
 
 console.log('sample2/piyo')
 console.log('railsImagePath: ', railsImagePath)
 console.log('assetPackPath: ', assetPackPath)
+console.log('rails_png: ', rails_png)
+
+function createImg(src) {
+  var img = document.createElement('img');
+  img.src = src;
+  document.body.appendChild(img);
+}
