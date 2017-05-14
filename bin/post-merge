@@ -1,0 +1,9 @@
+#!/bin/sh
+# setup:
+#   cp bin/post-merge .git/hooks/post-merge
+
+echo 'post-merge'
+# NODE_ENV=production bin/webpack
+# NODE_ENV=production bin/rake webpacker:compile
+NODE_ENV=production bundle exec rake webpacker:compile
+
