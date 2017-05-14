@@ -2,4 +2,4 @@
 
 require('./sample2')
 
-console.log('sampleee1')
+console.log('sample1')
