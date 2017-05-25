@@ -12,4 +12,9 @@
 //
 //= require rails-ujs
 //= require turbolinks
+//= require jquery
 //= require_tree .
+
+$(function() {
+  $('body').append('<p>hello jquery.</p>');
+});
